@@ -99,9 +99,7 @@ $(document).ready(function() {
     params = parseUri(window.location.href);
     host = window.location.hostname;
     port = params.queryKey['port'] || '9090';
-    //imgport = params.queryKey['imgport'] || '9191';
     connected = true;
-    //ros = new ROS('ws://' + host + ':' + port); //If Debug
     ros = new ROS('ws://' + host + ':8888');
 
     ros.on('close', function(e) {
@@ -128,7 +126,6 @@ $(document).ready(function() {
         connected = true;
         $('.ros-status').each(function() {
             $(this).addClass('btn');
-            //$(this).addClass('btn-success');
             $(this).removeClass('btn-warning');
             $(this).removeClass('btn-danger');
             $(this).text('Connected');
@@ -334,7 +331,6 @@ function Position(x, y) {
     this.y = y;
 }
 
-
 function ObjectHerb(id, type, start_location, is_goal, is_blocking, xextent, yextent, rot, off) {
     this.id = id;
     this.type = type;
@@ -404,7 +400,6 @@ function drawObject(o, init) {
     draw_object.data("herb_obj", o);
     return draw_object
 }
-
 
 function drawBox(o, x, y, rot, init) {
     var x_pos = ScaleXForward(x + box_xext * .525);
