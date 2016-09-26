@@ -4,7 +4,7 @@ import json
 import random
 import string
 from flask import Flask, render_template, send_from_directory, make_response, request, url_for, redirect
-from console import runBackEnd
+from run_back_end import RunBackEnd
 from multiprocessing import Process
 
 app = Flask(__name__)
@@ -28,7 +28,8 @@ def instructions():
     resp = make_response(render_template('instructions.html'))
     resp.set_cookie('mturk_id', mturk_id, max_age=survey_duration, path='/')
 
-    p = Process(target=runBackEnd, args=(mturk_id,))
+    back_end = RunBackEnd()
+    p = Process(target=back_end.runBackEnd, args=(mturk_id,))
     p.start()
     data[mturk_id] = p
 

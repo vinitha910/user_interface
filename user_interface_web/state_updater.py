@@ -5,7 +5,7 @@ import json
 import yaml
 
 from datetime import datetime
-from console import initialize_module
+from console import Module
 
 # Import service messages
 from user_interface.srv import *
@@ -96,8 +96,8 @@ class StateUpdater:
         if req.sceneNum < 16:
             path=None
             self.robot_ = None
-            self.module, self.query = initialize_module(self.queryfiles[self.sceneNum], pathfile=path,     
-                                                        robot=self.robot_, env=self.env_)
+            self.module, self.query = Module.initialize_module(self.queryfiles[self.sceneNum], pathfile=path,     
+                                                                         robot=self.robot_, env=self.env_)
             self.env_ = self.query.env
             self.robot_ = self.query.args[0]
             self.initialize = True
