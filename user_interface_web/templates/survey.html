@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- These three are needed for reasons -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/static/css/mystyle.css">
+
+<script src="/static/js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/js/surveyhandler.js"></script>
+
+<!-- herb favicon -->
+<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="container">
+    <form action="submit_survey" method="post" id="survey">
+    <h3>Thank you for participating in this study! To finish this study, please answer the following questionnaire. </h3>
+
+      <br>
+      <p>1. What is your gender?</p>
+      <div class="radio"><label><input type="radio" name=1 value="Man">Man</label></div>
+      <div class="radio"><label><input type="radio" name=1 value="Woman">Woman</label></div>
+      <div class="radio"><label><input type="radio" name=1 value="Gender Neutral/Fluid">Gender Neutral/Fluid</label></div>
+      <div class="radio"><label><input type="radio" name=1 value="Prefer not to answer">Prefer not to answer</label></div>
+      <br>
+
+      <p>2. What is your age?</p>
+      <input type="number" name=2 class="fr2 form-control" min="18" max="90" placeholder="Enter your Age">
+      <br>
+      <br>
+    
+      <p>3. Did you develop an overall strategy? If so, what was your strategy?</p>
+      <input type="text" name=3 class="fr2 form-control" placeholder="Explain your answer to question #3">
+      <br>
+      <br>
+
+      <p>4. Did your strategy change over time? If so, please explain how and why it changed.</p>
+      <input type="text" name=4 class="fr2 form-control" placeholder="Explain your answer to question #4">
+      <br>
+      <br>
+
+      <p>5. Rate your familiarity with robots.</p>
+      <table class="table table-bordered table-hover fixed">
+        <col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" />
+        <tr>
+          <th>Very unfamiliar</th>
+          <th>Unfamiliar</th>
+	  <th>Unfamiliar somewhat</th>
+          <th>Neither nonfamiliar nor familiar</th>
+          <th>Familiar somewhat</th>
+	  <th>Familiar</th>
+          <th>Very familiar</th>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name=5 value="1"> 1</label></td>
+          <td><label><input type="radio" name=5 value="2"> 2</label></td>
+          <td><label><input type="radio" name=5 value="3"> 3</label></td>
+          <td><label><input type="radio" name=5 value="4"> 4</label></td>
+          <td><label><input type="radio" name=5 value="5"> 5</label></td>
+	  <td><label><input type="radio" name=5 value="6"> 6</label></td>
+	  <td><label><input type="radio" name=5 value="7"> 7</label></td>
+        </tr>
+      </table>
+
+      <p>6. Rate your familiarity with video games.</p>
+      <table class="table table-bordered table-hover fixed">
+        <col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" />
+        <tr>
+          <th>Very unfamiliar</th>
+          <th>Unfamiliar</th>
+	  <th>Unfamiliar somewhat</th>
+          <th>Neither nonfamiliar nor familiar</th>
+          <th>Familiar somewhat</th>
+	  <th>Familiar</th>
+          <th>Very familiar</th>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name=6 value="1"> 1</label></td>
+          <td><label><input type="radio" name=6 value="2"> 2</label></td>
+          <td><label><input type="radio" name=6 value="3"> 3</label></td>
+          <td><label><input type="radio" name=6 value="4"> 4</label></td>
+          <td><label><input type="radio" name=6 value="5"> 5</label></td>
+	  <td><label><input type="radio" name=6 value="6"> 6</label></td>
+	  <td><label><input type="radio" name=6 value="7"> 7</label></td>
+        </tr>
+      </table>
+
+      <p>7. Rate how frequently you play video games.</p>
+      <table class="table table-bordered table-hover fixed">
+        <col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" /><col width="13%" />
+        <tr>
+          <th>Never</th>
+          <th>Very rarely</th>
+	  <th>Rarely</th>
+          <th>Occasionally somewhat</th>
+          <th>Occasionally</th>
+	  <th>Frequently</th>
+          <th>Very frequently</th>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name=7 value="1"> 1</label></td>
+          <td><label><input type="radio" name=7 value="2"> 2</label></td>
+          <td><label><input type="radio" name=7 value="3"> 3</label></td>
+          <td><label><input type="radio" name=7 value="4"> 4</label></td>
+          <td><label><input type="radio" name=7 value="5"> 5</label></td>
+	  <td><label><input type="radio" name=7 value="6"> 6</label></td>
+	  <td><label><input type="radio" name=7 value="7"> 7</label></td>
+        </tr>
+      </table>
+
+      <p class="text-danger hide">Please answer all questions</p>
+      <input value="Continue" type="submit" class="btn btn-success"/>
+  </form>
+  </div>
+</body>
+</html>

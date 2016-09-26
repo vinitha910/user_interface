@@ -1,0 +1,11 @@
+int8 id
+string type
+string shape
+string[] action_list
+float32 x
+float32 y
+float32 xextent
+float32 yextent
+float32 zextent
+float32 rot
+float32 off

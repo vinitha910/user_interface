@@ -1,0 +1,1157 @@
+args:
+- {__type__: KinBody, name: !!python/unicode 'bh280'}
+- {__type__: KinBody, name: !!python/unicode 'target'}
+- __type__: ndarray
+  data:
+  - [1.0, 0.0, 0.0, 0.55]
+  - [0.0, 1.0, 0.0, -0.7]
+  - [0.0, 0.0, 1.0, 0.75]
+  - [0.0, 0.0, 0.0, 1.0]
+env:
+  bodies:
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [-0.31450447071140897, 0.0, 0.0, 0.9492559917654123]
+        position: [0.7400363361546501, 0.06562886401394191, 0.8593243360519409]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [-0.31450447071140897, 0.0, 0.0, 0.9492559917654123]
+        position: [0.7400363361546501, 0.06562886401394191, 0.8593243360519409]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1450.0
+        _name: !!python/unicode 'target'
+        _t:
+          orientation: [-0.31450447071140897, 0.0, 0.0, 0.9492559917654123]
+          position: [0.7400363361546501, 0.06562886401394191, 0.8593243360519409]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: true
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Box
+          _vAmbientColor: [0.20000000298023224, 0.20000000298023224, 0.20000000298023224]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.0, 1.0, 0.4000000059604645]
+          _vGeomData: [0.051, 0.051, 0.1075, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [966.6666666666666, 966.6666666666666, 966.6666666666666]
+    name: !!python/unicode 'target'
+    uri: !!python/unicode 'objects/large_white_box.kinbody.xml'
+  - is_robot: true
+    joints:
+    - info:
+        _bIsActive: true
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/hand_base'
+        _linkname1: !!python/unicode '/finger0_0'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j00'
+        _type: Revolute
+        _vanchor: [-0.025, 0.0, 0.0754000000000003]
+        _vaxes:
+        - [-1.020588796129684e-29, -2.56739074444568e-16, -1.0]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic: [null, null, null]
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [3.1415926535899996, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: true
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/finger0_0'
+        _linkname1: !!python/unicode '/finger0_1'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j01'
+        _type: Revolute
+        _vanchor: [0.0500000000000007, 0.0007999999999999711, 0.0]
+        _vaxes:
+        - [0.0, -1.0, -3.608224830031759e-15]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic: [null, null, null]
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [2.4434609527899998, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: true
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/finger1_0'
+        _linkname1: !!python/unicode '/finger1_1'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j11'
+        _type: Revolute
+        _vanchor: [0.0499991459461259, 0.0007999999999993671, -0.00029224075393367903]
+        _vaxes:
+        - [-4.93038065763132e-32, -1.0, -3.608224830031759e-15]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic: [null, null, null]
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [2.4434609527899998, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: true
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/hand_base'
+        _linkname1: !!python/unicode '/finger2_1'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j21'
+        _type: Revolute
+        _vanchor: [-0.000799999999999992, 0.05, 0.0754000000000003]
+        _vaxes:
+        - [1.0, 3.608224830031759e-15, -3.608224830031759e-15]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic: [null, null, null]
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [2.4434609527899998, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: false
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/finger0_1'
+        _linkname1: !!python/unicode '/finger0_2'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j02'
+        _type: Revolute
+        _vanchor: [0.069935684739622, 0.0030000000000000304, 0.00020000000000693402]
+        _vaxes:
+        - [-5.83763353720927e-14, 2.999341924771212e-16, 1.0]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic:
+        - [/j01*0.321429+0.000000, '|/j01 0.321429', '']
+        - null
+        - null
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [0.837758040957, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: false
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/hand_base'
+        _linkname1: !!python/unicode '/finger1_0'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j10'
+        _type: Revolute
+        _vanchor: [0.025, 0.0, 0.07540000000000001]
+        _vaxes:
+        - [-1.8490764475131982e-13, -5.033948566801269e-08, 0.9999970810392587]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic:
+        - [/j00*1.000000+0.000000, '|/j00 1.000000', '']
+        - null
+        - null
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [3.1415926535899996, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: false
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/finger1_1'
+        _linkname1: !!python/unicode '/finger1_2'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j12'
+        _type: Revolute
+        _vanchor: [0.0699356847396015, 0.0030000000000337704, 0.000199999999999378]
+        _vaxes:
+        - [3.0181148742924514e-16, -1.7640624647307303e-18, 1.0]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic:
+        - [/j11*0.321429+0.000000, '|/j11 0.321429', '']
+        - null
+        - null
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [0.837758040957, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    - info:
+        _bIsActive: false
+        _bIsCircular: [0, 0, 0]
+        _linkname0: !!python/unicode '/finger2_1'
+        _linkname1: !!python/unicode '/finger2_2'
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _name: !!python/unicode '/j22'
+        _type: Revolute
+        _vanchor: [0.0699356847396236, 0.0030000000000001102, 0.00019999999999999302]
+        _vaxes:
+        - [8.025393235290495e-16, -6.123233995736757e-17, 1.0]
+        - [0.0, 0.0, 1.0]
+        - [0.0, 0.0, 1.0]
+        _vcurrentvalues: []
+        _vhardmaxvel: [10.0, 10.0, 10.0]
+        _vlowerlimit: [0.0, 0.0, 0.0]
+        _vmaxaccel: [50.0, 50.0, 50.0]
+        _vmaxinertia: [0.0, 0.0, 0.0]
+        _vmaxtorque: [0.0, 0.0, 0.0]
+        _vmaxvel: [2.0, 10.0, 10.0]
+        _vmimic:
+        - [/j21*0.321429+0.000000, '|/j21 0.321429', '']
+        - null
+        - null
+        _voffsets: [0.0, 0.0, 0.0]
+        _vresolution: [0.02, 0.02, 0.02]
+        _vupperlimit: [0.837758040957, 0.0, 0.0]
+        _vweights: [1.0, 1.0, 1.0]
+    kinbody_state:
+      description: !!python/unicode ':Interface Author: Rosen Diankov
+
+
+        Simplest robot possible that just passes the trajectories to the controller'
+      dof_acceleration_limits: [50.0, 50.0, 50.0, 50.0]
+      dof_branches: [0.0, 0.0, 0.0, 0.0]
+      dof_position_limits:
+      - [0.0, 0.0, 0.0, 0.0]
+      - [3.1415926535899996, 2.4434609527899998, 2.4434609527899998, 2.4434609527899998]
+      dof_resolutions: [0.02, 0.02, 0.02, 0.02]
+      dof_torque_limits: [0.0, 0.0, 0.0, 0.0]
+      dof_values: [8.21565038222616e-15, 0.7000000000000044, 0.7000000000000085, 0.7000000000000028]
+      dof_velocity_limits: [2.0, 2.0, 2.0, 2.0]
+      dof_weights: [1.0, 1.0, 1.0, 1.0]
+      link_enable_states: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+      link_transforms:
+      - orientation: [0.697735855905228, 0.11420830270052873, -0.697808811985232,
+          0.11482160464922243]
+        position: [0.8380839246039217, 0.6915905040902186, 0.849916907463786]
+      - orientation: [0.5745648904617724, 0.5741828082338379, -0.41266787761913054,
+          -0.41218261991340377]
+        position: [0.7666450662180976, 0.6674700626524137, 0.8249198312872428]
+      - orientation: [-0.000136134895582183, -0.5630428361062231, 0.8264275975416878,
+          -0.00041496773988452797]
+        position: [0.7826259434579996, 0.6200934877273186, 0.8257634609515004]
+      - orientation: [6.291698734846978e-05, -0.13607370507227995, 0.9906986201953485,
+          -0.0004321717108081663]
+        position: [0.7542400594456939, 0.5561070975777685, 0.825610279790912]
+      - orientation: [0.5733557041297285, 0.5729765503988752, -0.41434416473325647,
+          -0.4138599067153143]
+        position: [0.766632952320245, 0.6675120217094221, 0.8749198122141497]
+      - orientation: [-0.00013443206967201862, -0.5606252836418649, 0.8280695032482409,
+          -0.00041359365134054635]
+        position: [0.7826138328348096, 0.6201354446189039, 0.8757632582206889]
+      - orientation: [6.424870039069688e-05, -0.13221238373542032, 0.9912213155775597,
+          -0.0004301206740947123]
+        position: [0.7538544488576683, 0.556316056967164, 0.8756096580637149]
+      - orientation: [0.26936453764394674, -0.00022968432624046744, 0.0003714512689745091,
+          0.9630381898600532]
+        position: [0.7506581320292761, 0.7148676171060075, 0.8490761920864404]
+      - orientation: [-0.18771260718016006, -4.022316747767383e-05, 0.0004348712818082873,
+          0.9822238982913682]
+        position: [0.6893146381828233, 0.7485869166764664, 0.8492330333696559]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [0.697735855905228, 0.11420830270052873, -0.697808811985232,
+          0.11482160464922243]
+        position: [0.8380839246039217, 0.6915905040902186, 0.849916907463786]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.60858
+        _name: !!python/unicode '/hand_base'
+        _t:
+          orientation: [0.697735855905228, 0.11420830270052873, -0.697808811985232,
+            0.11482160464922243]
+          position: [0.8380839246039217, 0.6915905040902186, 0.849916907463786]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [5.0019000000000003e-05, -0.0044561, 0.037267999999999996]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger1_0', !!python/unicode '/finger0_1',
+          !!python/unicode '/finger0_2', !!python/unicode '/finger1_1', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/hand_base_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/hand_base.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.0006986, 0.00050354, 0.00062253]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.14109000000000002
+        _name: !!python/unicode '/finger0_0'
+        _t:
+          orientation: [0.5745648904617724, 0.5741828082338379, -0.41266787761913054,
+            -0.41218261991340377]
+          position: [0.7666450662180976, 0.6674700626524137, 0.8249198312872428]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.030615999999999997, -7.3219e-05, -0.011201]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger1_0', !!python/unicode '/finger0_1',
+          !!python/unicode '/finger0_2', !!python/unicode '/finger1_1', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_0_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_0.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [2.0672e-05, 7.410500000000001e-05, 6.8207e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.062139
+        _name: !!python/unicode '/finger0_1'
+        _t:
+          orientation: [-0.000136134895582183, -0.5630428361062231, 0.8264275975416878,
+            -0.00041496773988452797]
+          position: [0.7826259434579996, 0.6200934877273186, 0.8257634609515004]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.023132999999999997, 0.00078642, 0.00052792]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_2', !!python/unicode '/finger1_1', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_1_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_1.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [4.8162000000000006e-06, 4.3317000000000006e-05, 4.4441000000000004e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.04166
+        _name: !!python/unicode '/finger0_2'
+        _t:
+          orientation: [6.291698734846978e-05, -0.13607370507227995, 0.9906986201953485,
+            -0.0004321717108081663]
+          position: [0.7542400594456939, 0.5561070975777685, 0.825610279790912]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.02295, 0.0010739, 0.00041752]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_1', !!python/unicode '/finger1_1', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_2_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_2.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [3.1199e-06, 1.6948e-05, 1.5809e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.14109000000000002
+        _name: !!python/unicode '/finger1_0'
+        _t:
+          orientation: [0.5733557041297285, 0.5729765503988752, -0.41434416473325647,
+            -0.4138599067153143]
+          position: [0.766632952320245, 0.6675120217094221, 0.8749198122141497]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.030615999999999997, -7.3219e-05, -0.011201]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger0_1',
+          !!python/unicode '/finger0_2', !!python/unicode '/finger1_1', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_0_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_0.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [2.0672e-05, 7.410500000000001e-05, 6.8207e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.062139
+        _name: !!python/unicode '/finger1_1'
+        _t:
+          orientation: [-0.00013443206967201862, -0.5606252836418649, 0.8280695032482409,
+            -0.00041359365134054635]
+          position: [0.7826138328348096, 0.6201354446189039, 0.8757632582206889]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.023132999999999997, 0.00078642, 0.00052792]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_1', !!python/unicode '/finger0_2', !!python/unicode '/finger1_2',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_1_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_1.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [4.8162000000000006e-06, 4.3317000000000006e-05, 4.4441000000000004e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.04166
+        _name: !!python/unicode '/finger1_2'
+        _t:
+          orientation: [6.424870039069688e-05, -0.13221238373542032, 0.9912213155775597,
+            -0.0004301206740947123]
+          position: [0.7538544488576683, 0.556316056967164, 0.8756096580637149]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.02295, 0.0010739, 0.00041752]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_1', !!python/unicode '/finger0_2', !!python/unicode '/finger1_1',
+          !!python/unicode '/finger2_1', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_2_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_2.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [3.1199e-06, 1.6948e-05, 1.5809e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.062139
+        _name: !!python/unicode '/finger2_1'
+        _t:
+          orientation: [0.26936453764394674, -0.00022968432624046744, 0.0003714512689745091,
+            0.9630381898600532]
+          position: [0.7506581320292761, 0.7148676171060075, 0.8490761920864404]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.023132999999999997, 0.00078642, 0.00052792]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_1', !!python/unicode '/finger0_2', !!python/unicode '/finger1_1',
+          !!python/unicode '/finger1_2', !!python/unicode '/finger2_2', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_1_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_1.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.7529411911964417, 0.7529411911964417, 0.7529411911964417]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [4.8162000000000006e-06, 4.3317000000000006e-05, 4.4441000000000004e-05]
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 0.04166
+        _name: !!python/unicode '/finger2_2'
+        _t:
+          orientation: [-0.18771260718016006, -4.022316747767383e-05, 0.0004348712818082873,
+            0.9822238982913682]
+          position: [0.6893146381828233, 0.7485869166764664, 0.8492330333696559]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.02295, 0.0010739, 0.00041752]
+        _vForcedAdjacentLinks: [!!python/unicode '/finger0_0', !!python/unicode '/finger1_0',
+          !!python/unicode '/finger0_1', !!python/unicode '/finger0_2', !!python/unicode '/finger1_1',
+          !!python/unicode '/finger1_2', !!python/unicode '/finger2_1', !!python/unicode '/hand_base']
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_2_collision.STL'
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_2.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [0.8980392217636108, 0.9176470637321472, 0.929411768913269]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [3.1199e-06, 1.6948e-05, 1.5809e-05]
+    manipulators: []
+    name: !!python/unicode 'bh280'
+    robot_state:
+      active_dof_indices: [0, 1, 2, 3]
+      active_manipulator: ''
+      grabbed_bodies: []
+    uri: !!python/unicode '/home/ubuntu/my-workspace/devel/share/herb_description/robots/bh280.urdf
+      /home/ubuntu/my-workspace/devel/share/herb_description/robots/bh280.srdf'
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [0.9999887414029306, 4.276258931104924e-09, -2.8807015632180518e-08,
+          -0.00474521520923817]
+        position: [0.6206578016657084, 0.29353788487211047, 0.7499530315399174]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [0.9999887414029306, 4.276258931104924e-09, -2.8807015632180518e-08,
+          -0.00474521520923817]
+        position: [0.6206578016657084, 0.29353788487211047, 0.7499530315399174]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: true
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1.0
+        _name: !!python/unicode 'plastic_glass'
+        _t:
+          orientation: [0.9999887414029306, 4.276258931104924e-09, -2.8807015632180518e-08,
+            -0.00474521520923817]
+          position: [0.6206578016657084, 0.29353788487211047, 0.7499530315399174]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: true
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/devel/share/openrave-0.9/data/objects/plastic_glass_collision.stl'
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/devel/share/openrave-0.9/data/objects/plastic_glass_visual.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.05000000074505806, 0.05000000074505806, 0.05000000074505806]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.4, 0.4, 0.4]
+    name: !!python/unicode 'plastic_glass'
+    uri: !!python/unicode 'objects/plastic_glass.kinbody.xml'
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [0.9806415785854251, 0.010875855296539724, 0.0021444421183044035,
+          -0.19549734394373633]
+        position: [0.5556661499505063, -0.19367097572900924, 0.7557789089367152]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [0.9806415785854251, 0.010875855296539724, 0.0021444421183044035,
+          -0.19549734394373633]
+        position: [0.5556661499505063, -0.19367097572900924, 0.7557789089367152]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1.0
+        _name: !!python/unicode 'pop_tarts'
+        _t:
+          orientation: [0.9806415785854251, 0.010875855296539724, 0.0021444421183044035,
+            -0.19549734394373633]
+          position: [0.5556661499505063, -0.19367097572900924, 0.7557789089367152]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/devel/share/openrave-0.9/data/objects/pop_tarts_visual.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.07]
+          _type: Box
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.05, 0.05, 0.07, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.4, 0.4, 0.4]
+    name: !!python/unicode 'pop_tarts'
+    uri: !!python/unicode 'objects/pop_tarts.kinbody.xml'
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.807132363319397, -0.3430710434913635, 0.7531270384788513]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.807132363319397, -0.3430710434913635, 0.7531270384788513]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: false
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1.0
+        _name: !!python/unicode 'pop_tarts2'
+        _t:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.807132363319397, -0.3430710434913635, 0.7531270384788513]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: false
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/randomized_rearrangement_planning/push_planner_benchmarks/tools/../../../pr-ordata/data/objects/pop_tarts_visual.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Sphere
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        - _bModifiable: false
+          _bVisible: false
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode ''
+          _filenamerender: !!python/unicode ''
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.07]
+          _type: Box
+          _vAmbientColor: [0.0, 0.0, 0.0]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.05, 0.05, 0.07, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.4, 0.4, 0.4]
+    name: !!python/unicode 'pop_tarts2'
+    uri: !!python/unicode '../../../pr-ordata/data/objects/pop_tarts2.kinbody.xml'
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.4430066645145416, 0.07851123809814453, 0.7464411854743958]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.4430066645145416, 0.07851123809814453, 0.7464411854743958]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: true
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1.0
+        _name: !!python/unicode 'plastic_glass2'
+        _t:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.4430066645145416, 0.07851123809814453, 0.7464411854743958]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: true
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/randomized_rearrangement_planning/push_planner_benchmarks/tools/../../../pr-ordata/data/objects/plastic_glass_collision.stl'
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/randomized_rearrangement_planning/push_planner_benchmarks/tools/../../../pr-ordata/data/objects/plastic_glass_visual.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.05000000074505806, 0.05000000074505806, 0.05000000074505806]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.4, 0.4, 0.4]
+    name: !!python/unicode 'plastic_glass2'
+    uri: !!python/unicode '../../../pr-ordata/data/objects/plastic_glass2.kinbody.xml'
+  - is_robot: false
+    joints: []
+    kinbody_state:
+      description: !!python/unicode ''
+      dof_acceleration_limits: []
+      dof_branches: []
+      dof_position_limits:
+      - []
+      - []
+      dof_resolutions: []
+      dof_torque_limits: []
+      dof_values: []
+      dof_velocity_limits: []
+      dof_weights: []
+      link_enable_states: [1]
+      link_transforms:
+      - orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.42639368772506714, -0.4111798405647278, 0.7485184669494629]
+      link_velocities:
+      - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      transform:
+        orientation: [1.0, 0.0, 0.0, 0.0]
+        position: [0.42639368772506714, -0.4111798405647278, 0.7485184669494629]
+    links:
+    - info:
+        _bIsEnabled: true
+        _bStatic: true
+        _mapFloatParameters: {}
+        _mapIntParameters: {}
+        _mapStringParameters: {}
+        _mass: 1.0
+        _name: !!python/unicode 'plastic_glass3'
+        _t:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.42639368772506714, -0.4111798405647278, 0.7485184669494629]
+        _tMassFrame:
+          orientation: [1.0, 0.0, 0.0, 0.0]
+          position: [0.0, 0.0, 0.0]
+        _vForcedAdjacentLinks: []
+        _vgeometryinfos:
+        - _bModifiable: true
+          _bVisible: true
+          _fTransparency: 0.0
+          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/randomized_rearrangement_planning/push_planner_benchmarks/tools/../../../pr-ordata/data/objects/plastic_glass_collision.stl'
+          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/randomized_rearrangement_planning/push_planner_benchmarks/tools/../../../pr-ordata/data/objects/plastic_glass_visual.dae'
+          _t:
+            orientation: [1.0, 0.0, 0.0, 0.0]
+            position: [0.0, 0.0, 0.0]
+          _type: Trimesh
+          _vAmbientColor: [0.05000000074505806, 0.05000000074505806, 0.05000000074505806]
+          _vCollisionScale: [1.0, 1.0, 1.0]
+          _vDiffuseColor: [1.0, 1.0, 1.0]
+          _vGeomData: [0.0, 0.0, 0.0, 0.0]
+          _vRenderScale: [1.0, 1.0, 1.0]
+        _vinertiamoments: [0.4, 0.4, 0.4]
+    name: !!python/unicode 'plastic_glass3'
+    uri: !!python/unicode '../../../pr-ordata/data/objects/plastic_glass3.kinbody.xml'
+kwargs:
+  __type__: dict
+  control_bounds:
+    __type__: dict
+    high: [0.5, 0.5, 1.0, 0.5]
+    low: [-0.5, -0.5, -1.0, 0.1]
+  control_type: StaticTwist
+  goal_epsilon: 0.1
+  goal_object_name: target
+  manip_sdevs: [0.02, 0.02, 0.2]
+  manip_state_type: StateSE2
+  max_plan_duration: 60
+  movable_object_names: [target, plastic_glass, pop_tarts2, pop_tarts, plastic_glass2, plastic_glass3]
+  movable_weight: 1.0
+  noisy_goal_epsilon: 0.2
+  num_control_samples: 3
+  num_starts: 0
+  num_tree_threads: 1
+  obj_sdevs: [0.02, 0.02, 0.2]
+  object_state_type: StateSE2
+  parallelize_control_sampling: false
+  parallelize_tree_growth: false
+  pushing_manifold: [0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.8499,
+    0.0, 0.0, 0.0, 1.0]
+  pushing_model: simple
+  shortcut_time: 0.0
+  state_bounds:
+    __type__: dict
+    height: 0.76
+    high: [1.03, 0.93, 6.29]
+    low: [0.27, -0.93, -6.29]
+  use_compound_control: false
+planning_method: PushWithBaseToPose
+render:
+    bh280: package://push_planner_benchmarks/render/bh280.render.yaml
+    target: package://push_planner_benchmarks/render/box.render.yaml
+    plastic_glass: package://push_planner_benchmarks/render/glass.render.yaml
+    plastic_glass2: package://push_planner_benchmarks/render/glass.render.yaml
+    plastic_glass3: package://push_planner_benchmarks/render/glass.render.yaml
+    pop_tarts: package://push_planner_benchmarks/render/box.render.yaml
+    pop_tarts2: package://push_planner_benchmarks/render/box.render.yaml

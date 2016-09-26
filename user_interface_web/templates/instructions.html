@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Instructions</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+
+    <script src="/static/js/bootstrap.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+
+    <!-- herb favicon -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <!-- Our script -->
+    <script type="text/javascript" src="/static/js/change_images.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h3 id="instruction-text"></h3>
+      <div id="screen">
+	<img id="ui-image" src="/static/img/slide1.png" width="640" height="640"/>
+      </div>
+      <button id="left-button" type="button" class="ui-button btn btn-primary btn-lg pull-left" onclick="changeImage(false)">Previous</button>
+      <button id="right-button" type="button" class="ui-button btn btn-primary btn-lg pull-right" onclick="changeImage(true)">Continue</button>
+    </div>
+  </body>
+</html>

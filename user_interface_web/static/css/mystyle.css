@@ -1,0 +1,14 @@
+/*our custon stylesheet for button positioning*/
+
+#left-button {
+    width:100px !important;
+}
+
+#right-button{
+    width:100px !important;
+    margin-left: 10.5cm;
+}
+
+.container-fluid {
+    text-align: center;
+}

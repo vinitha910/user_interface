@@ -1,0 +1,8 @@
+---
+float32 x
+float32 y
+float32 xextents
+float32 yextents
+float32 goalx
+float32 goaly
+float32 goalradius

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Push Planning User Study</title>
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/static/css/scenestyles.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body>   
+    <script src="/static/js/raphael-min.js"></script>
+    <script src="/static/js/raphael.free_transform.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	    crossorigin="anonymous"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/ros_bundle.js"></script>
+    <script src="/static/js/parseuri.js"></script>
+    <script src="/static/js/ros_bundle.js"></script>
+    <script src="/static/js/myfunctions.js"></script>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="mycontainer">
+          <a id="brand">Push Planning User Study: Practice Scene 1/2</a>
+	  <button id="Status" class="btn ros-status pull-right">Status</button>
+	  <button id="Reset_Modal" class="btn btn-next pull-right" data-toggle="modal" data-target="#resetModal" >Reset Scene</button> 
+        </div>
+      </div>
+    </div> 
+
+    <canvas id="canvas"></canvas>
+
+	  <!-- Practice Modal -->
+	  <div class="modal fade" id="practiceModal" role="dialog">
+	    <div class="modal-dialog">
+
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>You will be given 2 practice scenes to try out the controls. After you complete these 2 practice scenes you will begin the study which will contain 14 scenes. Click "Continue" to start the practice scenes.</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Go To Survey Modal -->
+	  <div class="modal fade" id="surveyModal" role="dialog">
+	    <div class="modal-dialog">
+
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>You are almost done with the study! Click "Continue" to fill out a survey and complete the study.</p>
+		</div>
+		<div class="modal-footer">
+		  <button id="goToSurvey" type="button" onclick ="Next_Scene(this)" class="btn btn-default" data-dismiss="modal">Continue</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Begin Study Modal -->
+	  <div class="modal fade" id="studyModal" role="dialog">
+	    <div class="modal-dialog">
+
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>You have successfully completed the practice scenes. Click "Continue" to begin the study.</p>
+		</div>
+		<div class="modal-footer">
+		  <button id="study" type="button" onclick ="Next_Scene(this)" class="btn btn-default" data-dismiss="modal">Continue</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Reset Modal -->
+	  <div class="modal fade" id="resetModal" role="dialog">
+	    <div class="modal-dialog">
+	      
+	      <!-- Modal content-->
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>Are you sure you want to <b>reset the scene</b>?</p>
+		</div>
+		<div class="modal-footer">
+		  <button id="resetScene" type="button" onclick="Reset_Scene(this)" class="btn btn-default" data-dismiss="modal">Continue</button>
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <!-- Next Scene Modal -->
+	  <div class="modal fade" id="inGoalModal" role="dialog">
+	    <div class="modal-dialog">
+	      
+	      <!-- Modal content-->
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>You have successfully pushed the target object into the goal region. Click Continue to go to the next scene.</p>
+		</div>
+		<div class="modal-footer">
+		  <button id="nextScene" type="button" onclick="Next_Scene(this)" class="btn btn-default" data-dismiss="modal">Continue</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+    
+	  <!-- Disconnected Modal -->
+	  <div class="modal fade" id="diconnectedModal" role="dialog">
+	    <div class="modal-dialog">
+	      
+	      <!-- Modal content-->
+	      <div class="modal-content">
+		<div class="modal-body">
+		  <p>You are disconnected from the server and will not be able to begin the study. Please email <b>vrangane@andrew.cmu.edu</b> to reconnect to the server.</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+  </body>
+  
+</html>
+
+
+

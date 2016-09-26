@@ -1,0 +1,5 @@
+string input
+---
+int8 num_objects
+ReconfigurationObject[] objects
+string validMove
