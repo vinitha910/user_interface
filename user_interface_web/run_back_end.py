@@ -14,17 +14,12 @@ class RunBackEnd():
         path=None
         env = None
         robot = None
-        #controls = []
-        #states = []
         
         m = Module()
         module, query = m.initialize_module(queryfiles[0], pathfile=path,     
-                                                 robot=robot, env=env)
+                                            robot=robot, env=env)
 
         env = query.env
         robot = query.args[0]
-        #params = query.kwargs
-        #goal_object = query.args[1]
-        #goal = query.args[2]
 
         x = StateUpdater(robot,env,module,query,queryfiles,0,namespace)

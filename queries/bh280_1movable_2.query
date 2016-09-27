@@ -378,7 +378,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/hand_base_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/hand_base_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -393,7 +393,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/hand_base.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/hand_base.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -426,7 +426,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_0_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_0_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -441,7 +441,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_0.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_0.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -474,7 +474,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_1_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_1_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -489,7 +489,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_1.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_1.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -522,7 +522,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_2_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_2_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -537,7 +537,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger0_2.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger0_2.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -570,7 +570,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_0_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_0_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -585,7 +585,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_0.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_0.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -618,7 +618,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_1_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_1_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -633,7 +633,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_1.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_1.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -666,7 +666,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_2_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_2_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -681,7 +681,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger1_2.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger1_2.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -714,7 +714,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_1_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger2_1_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -729,7 +729,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_1.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger2_1.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -762,7 +762,7 @@ env:
         - _bModifiable: false
           _bVisible: false
           _fTransparency: 0.0
-          _filenamecollision: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_2_collision.STL'
+          _filenamecollision: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger2_2_collision.STL'
           _filenamerender: !!python/unicode ''
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
@@ -777,7 +777,7 @@ env:
           _bVisible: true
           _fTransparency: 0.0
           _filenamecollision: !!python/unicode ''
-          _filenamerender: !!python/unicode '/home/ubuntu/my-workspace/src/herb_description/meshes/finger2_2.dae'
+          _filenamerender: !!python/unicode '/home/vrangane/storage/workspace/src/herb_description/meshes/finger2_2.dae'
           _t:
             orientation: [1.0, 0.0, 0.0, 0.0]
             position: [0.0, 0.0, 0.0]
@@ -794,8 +794,8 @@ env:
       active_dof_indices: [0, 1, 2, 3]
       active_manipulator: ''
       grabbed_bodies: []
-    uri: !!python/unicode '/home/ubuntu/my-workspace/devel/share/herb_description/robots/bh280.urdf
-      /home/ubuntu/my-workspace/devel/share/herb_description/robots/bh280.srdf'
+    uri: !!python/unicode '/home/vrangane/storage/workspace/devel/share/herb_description/robots/bh280.urdf
+      /home/vrangane/storage/workspace/devel/share/herb_description/robots/bh280.srdf'
 kwargs:
   __type__: dict
   control_bounds:

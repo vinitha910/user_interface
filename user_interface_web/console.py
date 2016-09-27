@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import herbpy
 import yaml
-#import prpy.rave
 
 # Load the query
 from prpy_benchmarks.query import BenchmarkQuery
@@ -33,9 +32,3 @@ class Module():
             module.SetState(path[0]['state'])
 
         return module, query
-       
-
-
-
-
-	
