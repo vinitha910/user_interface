@@ -69,17 +69,8 @@ def submit_survey():
             <br><h1>Thank you participating in this study! Your Mechanical Turk ID is: {}</h1>
          """.format(mturk_id)
 
-# For development/testing only
 if __name__ == "__main__":
-    #parser = argparse.ArgumentParser(description="To Debug")
-    #parser.add_argument("ID")
-    #global args
-    #args=parser.parse_args()
-    #app.debug = True
-    
-    app.run(host='0.0.0.0', port="8080")
 
-    #for key in data:
-    #    data[key].terminate()
+    app.run(host='0.0.0.0', port="8080")
 
 
