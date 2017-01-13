@@ -96,7 +96,8 @@ class StateUpdater:
         if req.sceneNum < 16:
             path=None
             self.robot_ = None
-            self.module, self.query = Module.initialize_module(self.queryfiles[self.sceneNum], pathfile=path,     
+            m = Module()
+            self.module, self.query = m.initialize_module(self.queryfiles[self.sceneNum], pathfile=path,     
                                                                          robot=self.robot_, env=self.env_)
             self.env_ = self.query.env
             self.robot_ = self.query.args[0]
@@ -157,8 +158,8 @@ class StateUpdater:
         resp.y = (y_max+y_min)/2
         resp.xextents = (x_max-x_min)/2
         resp.yextents = (y_max-y_min)/2
-        resp.goalx = self.query.args[2][0,3]
-        resp.goaly = self.query.args[2][1,3]
+        resp.goalx = self.query.args[2][0]
+        resp.goaly = self.query.args[2][1]
         resp.goalradius = self.query.kwargs['goal_epsilon']*1.2
         return resp
 
@@ -243,7 +244,6 @@ class StateUpdater:
                 if self.initialize == True:
                     self.hand_off = aa[2]
                     self.hand_extents = [obj_bb.extents()[0], obj_bb.extents()[1], obj_bb.extents()[2]]
-                    print(self.hand_extents)
                 obj.xextent = self.hand_extents[0] 
                 obj.yextent = self.hand_extents[1]
                 obj.zextent = self.hand_extents[2]
