@@ -114,7 +114,7 @@ class StateUpdater:
             self.invalMoves = self.invalMoves + 1
             return "False"
         else:
-            controls = {'control': control, 'duration': 0.03, 'state': self.module.GetState()}
+            controls = {'control': control, 'duration': 0.065, 'state': self.module.GetState()}
             self.states.append(controls)
             self.valMoves = self.valMoves + 1
             return "True"
@@ -123,26 +123,13 @@ class StateUpdater:
         resp = InputToStateResponse()
         input = req.input
         state_o = self.module.GetState()
-        if input == 'forward':
-            state_n = self.module.ExecuteTwist(0, -0.65, 0, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [0, -0.65, 0, 0.065])
-        elif input == 'backward':
-            state_n = self.module.ExecuteTwist(0, 0.65, 0, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [0, 0.65, 0, 0.065])
-        elif input == 'left':
-            state_n = self.module.ExecuteTwist(0.65, 0, 0, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [0.65, 0, 0, 0.065])
-        elif input == 'right':
-            state_n = self.module.ExecuteTwist(-0.65, 0, 0, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [-0.65, 0, 0, 0.065])
-        elif input == 'tleft':
-            state_n = self.module.ExecuteTwist(0, 0, 0.65, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [0, 0, 0.65, 0.065])
-        elif input == 'tright':
-            state_n =  self.module.ExecuteTwist(0, 0, -0.65, 0.065, stepsize=0.065)
-            resp.validMove = self.CheckMove(state_o, state_n, [0, 0, -0.65, 0.065])
-        else:
+
+        if input == "":
             resp.validMove = "False"
+        else:
+            c = [float(x) for x in input.split(', ')]
+            state_n = self.module.ExecuteTwist(c[0], c[1], c[2], c[3], stepsize=c[3])
+            resp.validMove = self.CheckMove(state_o, state_n, c)
 
         hand_state = yaml.dump(self.module.GetState())
 

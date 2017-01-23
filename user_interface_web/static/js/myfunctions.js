@@ -66,7 +66,7 @@ var start_drag_pos = new Position(0, 0);
 
 var alert_timeout = 3000;
 
-var keyboard_input = "none";
+var rotation = false;
 var sceneNum = 0;
 var validMove = "True";
 var inGoal = false;
@@ -210,31 +210,29 @@ $(document).ready(function() {
         var request = new ros.ServiceRequest();
         console.log(request);
 
-        if (inGoal == false) {
+	request.input = "" 
+
+        if (inGoal === false) {
             switch (e.keyCode) {
                 case 37:
-                    request.input = "tleft";
-                    keyboard_input = "tleft";
+                    request.input = "0, 0, 0.65, 0.065";
+                    rotation = true;
                     break;
                 case 87:
-                    request.input = "forward";
-                    keyboard_input = "forward";
+                    request.input = "0, -0.65, 0, 0.065";
                     break;
                 case 39:
-                    request.input = "tright";
-                    keyboard_input = "tright";
+                    request.input = "0, 0, -0.65, 0.065";
+                    rotation = true;
                     break;
                 case 83:
-                    request.input = "backward";
-                    keyboard_input = "backward";
+                    request.input = "0, 0.65, 0, 0.065";
                     break;
                 case 65:
-                    request.input = "left";
-                    keyboard_input = "left";
+                    request.input = "0.65, 0, 0, 0.065";
                     break;
                 case 68:
-                    request.input = "right";
-                    keyboard_input = "right";
+                    request.input = "-0.65, 0, 0, 0.065";
                     break;
             };
         }
@@ -246,7 +244,7 @@ $(document).ready(function() {
     };
 
 
-    if (connected == true) {
+    if (connected === true) {
         console.log('CONNECTED: initing scene')
         initializeScene();
     }
@@ -378,17 +376,17 @@ function drawGoal() {
 }
 
 function drawObject(o, init) {
-    if (o.type == "target") {
+    if (o.type === "target") {
         box_xext = o.xext;
         box_yext = o.yext;
         draw_object = drawBox(o, o.start_location.x, o.start_location.y, o.rot, init);
-    } else if (o.type == "fuze_bottle") {
+    } else if (o.type === "fuze_bottle") {
         fuze_ext = o.xext;
         draw_object = drawFuzeBottle(o.start_location.x, o.start_location.y, init);
-    } else if (o.type == "plastic_glass") {
+    } else if (o.type === "plastic_glass") {
         glass_ext = o.xext;
         draw_object = drawGlass(o.start_location.x, o.start_location.y, init);
-    } else if (o.type == "pop_tarts") {
+    } else if (o.type === "pop_tarts") {
         pop_xext = o.xext;
         pop_yext = o.yext;
         draw_object = drawBox(o, o.start_location.x, o.start_location.y, o.rot, init);
@@ -410,9 +408,9 @@ function drawBox(o, x, y, rot, init) {
     var center_x = (width - x_pos - (b_width - 2 * stroke) / 2);
     var center_y = (y_pos + (b_height - 2 * stroke) / 2);
 
-    if (init == true) {
+    if (init === true) {
         var fill = "#00b200";
-        if (o.type == "pop_tarts") {
+        if (o.type === "pop_tarts") {
             var fill = "#000000";
         }
 
@@ -448,7 +446,7 @@ function drawHand(x, y, rot, off, init) {
     var h_height = scale * hand_yext * 2;
     var deg = (rot / Math.PI) * 180;
 
-    if (init == true) {
+    if (init === true) {
         var herb = paper.image("/static/img/bh280.png", x_pos + 24, y_pos, h_width, h_height);
         herb.rotate(-deg, x_pos + 24 + h_width / 2, y_pos + h_height);
     } else {
@@ -462,7 +460,6 @@ function drawHand(x, y, rot, off, init) {
         });
         herb.rotate(-deg, x_pos + 24 + h_width / 2, y_pos + h_height);
     }
-
     return herb;
 }
 
@@ -471,7 +468,7 @@ function drawFuzeBottle(x, y, init) {
     var y_pos = ScaleYForward(y);
     var f_radius = scale * fuze_ext;
 
-    if (init == true) {
+    if (init === true) {
         var fuze = paper.circle(x_pos + width / 3, y_pos, f_radius)
             .attr({
                 fill: "#000000"
@@ -493,7 +490,7 @@ function drawGlass(x, y, init) {
     var y_pos = ScaleYForward(y);
     var f_radius = scale * glass_ext;
 
-    if (init == true) {
+    if (init === true) {
         var glass = paper.circle(x_pos + width / 3, y_pos, f_radius)
             .attr({
                 fill: "#000000"
@@ -518,7 +515,7 @@ function drawKeys() {
     var rect_x = (canvas.width - 314) / 2 + 300;
     ctx.textAlign = "center";
     ctx.font = "20px Arial";
-    if (validMove == "False") {
+    if (validMove === "False") {
         ctx.fillStyle = "#FF0000";
         ctx.fillRect(rect_x, 30, 200, 65);
 
@@ -564,13 +561,13 @@ function getScene(initialize) {
             var o_temp = response.objects[i];
             console.log(o_temp.x, o_temp.y);
 
-            if (o_temp.type == "bh280" && (keyboard_input == "tleft" || keyboard_input == "tright")) {
+            if (o_temp.type === "bh280" && rotation === true) {
                 var start_pos = new Position(hand_x, hand_y);
             } else {
                 var start_pos = new Position(o_temp.x, o_temp.y);
             }
 
-            if (o_temp.type == "target" && initialize == true) {
+            if (o_temp.type === "target" && initialize === true) {
                 box_start_x = o_temp.x;
                 box_start_y = o_temp.y;
             }
@@ -580,12 +577,12 @@ function getScene(initialize) {
 
             table_objects.push(draw_obj);
 
-            if (sceneNum == 0 && initialize == true) {
+            if (sceneNum === 0 && initialize === true) {
                 $('#practiceModal').modal('show');
-            } else if (response.in_goal == true) {
-                if (sceneNum == 1) {
+            } else if (response.in_goal === true) {
+                if (sceneNum === 1) {
                     $('#studyModal').modal('show');
-                } else if (sceneNum == 15) {
+                } else if (sceneNum === 15) {
                     $('#surveyModal').modal('show');
                 } else {
                     $('#inGoalModal').modal('show');
