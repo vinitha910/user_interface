@@ -71,3 +71,9 @@ The following helper script can be used to subsample, playback and generate a vi
 $ python make_path_video.py --query results/query.yaml \
 --path results/path.ompl --outfile video.mp4
 ```
+
+## License
+user_interface is licensed under a BSD license. See [LICENSE](https://github.com/personalrobotics/user_interface/blob/master/LICENSE) for more information.
+
+## Author/Acknowledgements
+user_interface is developed by Vinitha Ranganeni ([**@vinitha910**](https://github.com/vinitha910)) at the [Personal Robotics Lab](https://personalrobotics.ri.cmu.edu/) in the [Robotics Institute](http://ri.cmu.edu/) at [Carnegie Mellon University](http://www.cmu.edu/). I would like to thank Clint Liddick ([**@ClintLiddick**](https://github.com/ClintLiddick)) and Jennifer King ([**@jeking**](https://github.com/jeking04)) for their assistance in developing user_interface. 
